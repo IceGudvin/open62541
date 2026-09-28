@@ -1,0 +1,11 @@
+libdir=/home/kirill/OPC_UA_AIN_SIM/open62541/install/lib
+sharedlibdir=${libdir}
+includedir=/home/kirill/OPC_UA_AIN_SIM/open62541/install/include
+
+Name: open62541
+Description: open62541 is an open source C (C99) implementation of OPC UA
+Version: 1.5.8-733-g5ae7657e5
+Requires.private: 
+Cflags: -I${includedir} -DUA_ENABLE_AMALGAMATION
+Libs: -L${libdir} -lopen62541 -lpthread 
+Libs.private: -lm -lpthread -lrt
